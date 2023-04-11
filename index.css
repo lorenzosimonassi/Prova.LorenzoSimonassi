@@ -1,21 +1,49 @@
 *{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 body{
     background-color: rgb(29, 27, 37);
 }
 
+nav ul li a:hover{
+    color: rgb(48, 48, 172);
+}
+
+nav{
+    background-color: rgb(23, 20, 36);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+
+
 nav ul li{
     color: aliceblue;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    font-size: 1.8rem;
+}
+
+nav ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.8rem;
-    padding: 10px 70px;
+    width: 100%;
 }
+
+nav ul li:not(:nth-last-child(1)){
+    border-right: 2px solid aliceblue;
+}
+
 
 nav a{
     color: aliceblue;
@@ -23,8 +51,11 @@ nav a{
 }
 
 header{
-    text-align: center;
-    padding-top: 2%;
+    background-image: url('https://wallpaperaccess.com/full/19066.jpg');
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
 }
 
 main h1{
@@ -36,6 +67,7 @@ main h1{
 
 section{
     display: flex;
+    margin: 3.5%;
 }
 
 .container{
@@ -49,7 +81,7 @@ div h3{
     color: aliceblue;
     background-color: rgb(48, 48, 172);
     background-size: cover;
-    width: 455px;
+    width: 91%;
     height: 30px;
     font-size: 25px;
 }
@@ -70,12 +102,13 @@ div img{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 3%;
   }
 
 footer{
     background-color: rgb(23, 20, 36);
     height: 100px;
     text-align: center;
-    padding-top: 3%;
+    padding-top: 1.5%;
 }
   
